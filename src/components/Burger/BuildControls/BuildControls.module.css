@@ -7,6 +7,8 @@
     box-shadow: 0 2px 1px #ccc;
     margin: auto;
     padding: 10px 0;
+    min-height: 350px;
+    height: 41vh;
 }
 .OrderButton {
     background-color: #DAD735;
