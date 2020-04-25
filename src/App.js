@@ -3,14 +3,19 @@ import Layout from './containers/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 // import classes from './App.module.css';
 import Checkout from './containers/Checkout/Checkout';
+import { Route, Switch } from 'react-router-dom';
+
 
 class App extends Component {
     render() {
         return (
             <div>
                 <Layout>
-                    <BurgerBuilder />
-                    <Checkout />
+                    {/* switch will load the first hit page and exact loads exactly that url.. choose one or both */}
+                    <Switch>
+                        <Route path="/checkout" component={Checkout} />
+                        <Route path="/" exact component={BurgerBuilder} />
+                    </Switch>
                 </Layout>
             </div>
         );
