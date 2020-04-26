@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/burger-shop/static/css/main.ccf3a23e.chunk.css",
-    "main.js": "/burger-shop/static/js/main.631d2bf3.chunk.js",
-    "main.js.map": "/burger-shop/static/js/main.631d2bf3.chunk.js.map",
+    "main.js": "/burger-shop/static/js/main.e66c1b2d.chunk.js",
+    "main.js.map": "/burger-shop/static/js/main.e66c1b2d.chunk.js.map",
     "runtime-main.js": "/burger-shop/static/js/runtime-main.ee3674a3.js",
     "runtime-main.js.map": "/burger-shop/static/js/runtime-main.ee3674a3.js.map",
     "static/js/2.5fa64f10.chunk.js": "/burger-shop/static/js/2.5fa64f10.chunk.js",
     "static/js/2.5fa64f10.chunk.js.map": "/burger-shop/static/js/2.5fa64f10.chunk.js.map",
     "index.html": "/burger-shop/index.html",
-    "precache-manifest.2c5701da072511f412be662d90681051.js": "/burger-shop/precache-manifest.2c5701da072511f412be662d90681051.js",
+    "precache-manifest.4036195b055a9ed5d03e8e6eb257fae0.js": "/burger-shop/precache-manifest.4036195b055a9ed5d03e8e6eb257fae0.js",
     "service-worker.js": "/burger-shop/service-worker.js",
     "static/css/main.ccf3a23e.chunk.css.map": "/burger-shop/static/css/main.ccf3a23e.chunk.css.map",
     "static/js/2.5fa64f10.chunk.js.LICENSE.txt": "/burger-shop/static/js/2.5fa64f10.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.ee3674a3.js",
     "static/js/2.5fa64f10.chunk.js",
     "static/css/main.ccf3a23e.chunk.css",
-    "static/js/main.631d2bf3.chunk.js"
+    "static/js/main.e66c1b2d.chunk.js"
   ]
 }
