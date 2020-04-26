@@ -14,9 +14,9 @@ class App extends Component {
                 <Layout>
                     {/* switch will load the first hit page and exact loads exactly that url.. choose one or both */}
                     <Switch>
-                        <Route path="/checkout" component={Checkout} />
-                        <Route path="/orders" component={Orders} />
-                        <Route path="/" exact component={BurgerBuilder} />
+                        <Route path="/burger-shop/checkout" component={Checkout} />
+                        <Route path="/burger-shop/orders" component={Orders} />
+                        <Route path="/burger-shop" exact component={BurgerBuilder} />
                     </Switch>
                 </Layout>
             </div>

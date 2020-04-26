@@ -9,8 +9,8 @@ import axios from '../../axios-orders';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 const INGREDIENT_PRICES = {
-    salad: 0.3,
-    cheese: 0.6,
+    salad: 0.2,
+    cheese: 0.5,
     meat: 1.5,
     bacon: 0.7,
 }
@@ -18,7 +18,7 @@ const INGREDIENT_PRICES = {
 class BurgerBuilder extends Component {
     state = {
         ingredients: null,
-        totalPrice: 3,
+        totalPrice: 5,
         purchasable: false,
         purchasing: false,
         loading: false,
@@ -98,7 +98,7 @@ class BurgerBuilder extends Component {
         const queryString = queryParams.join('&');
 
         this.props.history.push({
-            pathname: '/checkout',
+            pathname: '/burger-shop/checkout',
             search: '?' + queryString
         });
     }
