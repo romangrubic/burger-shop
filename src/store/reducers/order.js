@@ -46,7 +46,7 @@ const reducer = (state = initState, action) => {
         case actionTypes.PURCHASE_INIT: return purchaseBurgerInit(state, action);
         case actionTypes.FETCH_ORDERS_START: return fetchOrderStart(state, action);
         case actionTypes.FETCH_ORDERS_SUCCESS: return fetchOrderSuccess(state, action);
-        case actionTypes.FETCH_ORDERS_FAIL: return fetchOrdersFail(state, action);
+        case actionTypes.FETCH_ORDERS_FAIL: return fetchOrderFail(state, action);
         default: return state;
     }
 };
