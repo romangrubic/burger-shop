@@ -82,11 +82,12 @@ class ContactData extends Component {
                 elementType: 'select',
                 elementConfig: {
                     options: [
+                        { value: 'not selected', displayValue: 'Choose option' },
                         { value: 'fastest', displayValue: 'Fastest' },
                         { value: 'cheapest', displayValue: 'Cheapest' }
                     ]
                 },
-                value: 'fastest',
+                value: 'not selected',
                 validation: {},
                 valid: false,
             },

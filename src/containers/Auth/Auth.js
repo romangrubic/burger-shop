@@ -44,7 +44,7 @@ class Auth extends Component {
     }
     componentDidMount(){
         if (!this.props.buildingBurger && this.props.authRedirectPath !== '/burger-shop'){
-            this.props.onSetAuthRedirectPath()
+            this.props.onSetAuthRedirectPath('/burger-shop/checkout');
         }
     }
 
@@ -149,7 +149,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return{
         onAuth: (email, password, isSignup) => dispatch(actions.auth(email, password, isSignup)),
-        onSetAuthRedirectPath: () => dispatch(actions.setAuthRedirectPath('/burger-shop/'))
+        onSetAuthRedirectPath: () => dispatch(actions.setAuthRedirectPath('/burger-shop'))
     }
 }
 

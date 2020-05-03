@@ -29,6 +29,7 @@ class App extends Component {
                     <Route path="/burger-shop/checkout" component={ Checkout } />
                     <Route path="/burger-shop/orders" component={ Orders } />
                     <Route path="/burger-shop/logout" component={ Logout } />
+                    <Route path="/burger-shop/auth" component={ Auth } />
                     <Route path="/burger-shop" exact component={ BurgerBuilder } />
                     <Redirect to='/burger-shop' />
                 </Switch>
