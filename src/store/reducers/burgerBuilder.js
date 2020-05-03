@@ -4,16 +4,16 @@ import { updateObject } from '../../shared/utility';
 
 const initialState = {
     ingredients: null,
-    totalPrice: 5,
+    totalPrice: 2,
     error: false,
     building: false
 };
 
 const INGREDIENT_PRICES = {
     salad: 0.2,
-    cheese: 0.5,
-    meat: 1.5,
-    bacon: 0.7,
+    cheese: 0.4,
+    meat: 1,
+    bacon: 0.6,
 }
 
 const addIngredient = (state, action) => {
