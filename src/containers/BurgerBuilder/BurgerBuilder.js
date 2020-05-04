@@ -11,8 +11,8 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 
 
-
-class BurgerBuilder extends Component {
+// to test container we should export them and then we can test them
+export class BurgerBuilder extends Component {
     state = {
         purchasing: false,
     }
