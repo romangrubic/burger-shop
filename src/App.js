@@ -7,7 +7,7 @@ import Logout from './containers/Auth/Logout/Logout';
 import { connect } from 'react-redux';
 import * as actions from './store/actions/index';
 
-// Lazy loading
+// Lazy loading. Dont forget to pass props 
 const Checkout = React.lazy(() => {
     return import('./containers/Checkout/Checkout');
 })
@@ -27,7 +27,8 @@ const App = props => {
 
         let routes = (
             <Switch>
-                <Route path="/burger-shop/auth" render={() => <Auth /> } />
+                {/* dont forget to pass props and spread them when using react lazy */}
+                <Route path="/burger-shop/auth" render={(props) => <Auth {...props}/> } />
                 <Route path="/burger-shop" exact component={ BurgerBuilder } />
                 <Redirect to='/burger-shop' />
             </Switch>
@@ -35,10 +36,10 @@ const App = props => {
         if (props.isAuthenticated) {
             routes = (
                 <Switch>
-                    <Route path="/burger-shop/checkout" render={() => <Checkout />} />
-                    <Route path="/burger-shop/orders" render={() =><Orders /> } />
+                    <Route path="/burger-shop/checkout" render={(props) => <Checkout {...props}/>} />
+                    <Route path="/burger-shop/orders" render={(props) =><Orders {...props}/> } />
                     <Route path="/burger-shop/logout" component={ Logout } />
-                    <Route path="/burger-shop/auth" render={() => <Auth /> } />
+                    <Route path="/burger-shop/auth" render={(props) => <Auth {...props}/> } />
                     <Route path="/burger-shop" exact component={ BurgerBuilder } />
                     <Redirect to='/burger-shop' />
                 </Switch>
